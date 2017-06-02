@@ -54,6 +54,7 @@ def log_parse2(filename):
     """
     dates_dic = log_parse1(filename)
 
+    # prints the first title line
     msg = "timestamp,totalmessages,"
     for key in process_dic.keys():
         msg += key + ","
@@ -78,7 +79,8 @@ if __name__ == "__main__":
 
 """
 output:
-Jun 2 10:01,9,3,6,0
-Jun 2 10:02,3,0,0,3
-Jun 2 10:03,3,3,0,0
+timestamp,totalmessages,CRON,kernel
+Jun 2 10:01,9,3,6
+Jun 2 10:02,3,3,0
+Jun 2 10:03,3,3,0
 """
