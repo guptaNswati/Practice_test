@@ -11,6 +11,6 @@ def recurs_query(url,idNum,tabs):
     if res:
         print("{:s}{:s} - {:s}".format(tabs,res.get('name'), res.get('title')))
         for i in res.get('reports'):
-            recurs_query(url,i,"\t")
+            recurs_query(url,i,tabs+"\t")
     else:
         return
